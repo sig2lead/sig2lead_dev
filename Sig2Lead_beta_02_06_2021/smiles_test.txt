@@ -1,0 +1,10 @@
+CC(C)NC[C@@H](O)c1ccc(O)c(O)c1	Isoproterenol
+COc1ccccc1OCCNC[C@@H](O)COc1cccc2[nH]c3ccccc3c12	Carvedilol
+CC(C)NC[C@@H](O)COc1ccc(CCOCC2CC2)cc1	Betaxolol
+CC(C)NC[C@H](O)COc1cccc2ccccc12	Propranolol
+CC(C)(C)NC[C@H](O)c1ccc(O)c(CO)c1	Xopenex
+OCc1cc([C@@H](O)CNCCCCCCOCCCCc2ccccc2)ccc1O	salmeterol
+CC(C)(C)NC[C@@H](O)c1cc(O)cc(O)c1	Terbutaline
+CCc1cc2c(cc1CC)CC(NC[C@H](O)c1ccc(O)c3[nH]c(=O)ccc13)C2	Indacaterol
+CC(C)NC[C@H](O)COc1ccc(CC(N)=O)cc1	Atenolol
+COCCc1ccc(OC[C@H](O)CNC(C)C)cc1	Metoprolol
