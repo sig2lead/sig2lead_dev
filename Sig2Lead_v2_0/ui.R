@@ -136,7 +136,7 @@ shinyUI(
 
                   
                    #checkboxInput("Advanced", "Advanced Options", selected),
-                   conditionalPanel(condition="input.Advanced_button ==  1 && input.Signature == 'Define Target Gene'",
+                   conditionalPanel(condition="input.Advanced_button%2==1 && input.Signature == 'Define Target Gene'",
                         #numericInput("topN", "Number of Analogs", value=1, min=1,max=5,step=1),
                         selectInput("ILINCS", "iLINCS Version", list("Current", "Legacy"), selected="Current"),
                         selectInput("ConOrDiscon","Activation or Inhibition", list("Inhibit", "Activate"), selected = "Inhibit"),            
