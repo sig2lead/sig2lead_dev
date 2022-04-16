@@ -2839,6 +2839,7 @@ shinyServer(function(input, output) {
       if (!is.null(input$AddedCompounds)){
       #if (!(input$file_input == "")){
       #if (!(is.null(input$file_input))){
+         pdf(NULL)
          if(!(grepl(".sdf", adds$name))){
         #if(!(grepl(".sdf", input$file_input$name))){
           # 
