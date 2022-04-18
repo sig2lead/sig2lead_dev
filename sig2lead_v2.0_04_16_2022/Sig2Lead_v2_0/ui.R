@@ -89,10 +89,13 @@ library(visNetwork)
 # Define UI for application that draws a histogram
 shinyUI(
   fluidPage(
-  
+    tags$head(
+      tags$link(rel = "stylesheet", type = "text/css", href = "customize.css")
+    ),
   # Application title
   titlePanel("Sig2Lead"),
-      fluidPage(useShinyjs(),
+      fluidPage(
+        useShinyjs(),
                 img(src='s2l.png', align='right', width=100,height=100),
                 
         tabsetPanel(id = "tabs",
@@ -193,7 +196,22 @@ shinyUI(
                   #downloadButton("SDFDownload", label = "Download SDF"),
                   #downloadButton("ConTableDownload", label="Download Table"),
                   #downloadButton("NCIDownload", label = "Download Similar NCI")
-                  tags$h1("For a set of candidate molecules defined in a user provided file and a target gene specified by the user, candidate drugs are ranked by similarity to their 'concordant' LINCS analogs that share transcriptional signature similarity with a knock-down of the target gene. Note that not all genes had their knock-down included in LINCS.")
+                  tags$div(
+                    tags$div(class='tlp',
+                             tags$span("Learn more"),
+                             tags$div(class="tooltip_text",
+                                      tags$h3("For a set of candidate molecules defined in a user 
+                            provided file and a target gene specified by the user, 
+                            candidate drugs are ranked by similarity to their 'concordant' 
+                            LINCS analogs that share transcriptional signature similarity 
+                            with a knock-down of the target gene. Note that not all 
+                            genes had their knock-down included in LINCS."),
+                                      
+                             )
+                    )
+                  )
+                  
+                  
 
 ############# Add this ######################################################################################                  
                 ),
@@ -411,7 +429,7 @@ shinyUI(
                  #br(),
                   uiOutput("downloadClusters"),
                   br(),
-                  conditionalPanel(condition="input.Advanced_button_mds ==  1",
+                  conditionalPanel(condition="input.Advanced_button_mds%2 ==  1",
                       numericInput("CutHeight", "Tanimoto Similarity", value="0.75"),
                       numericInput("ClusterSize", "Minimum Cluster Size", value="3"),
                       #checkboxInput("cluster_all_cmpds", value=FALSE, label="Cluster all Compounds"),
