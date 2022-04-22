@@ -553,7 +553,7 @@ tabPanel("Network Analysis", value = "mSTITCH", icon = NULL,
 tabPanel("Help",
          mainPanel(
            #includeHTML("./www/Sig2Lead_v2_user_manual_for_help.htm")
-           includeHTML("./www/Sig2Lead_Version_2_User_Manual_04_11_2022.htm")
+           includeHTML("./www/Sig2Lead_Version_2_User_Manual.htm")
          )
 )
 
