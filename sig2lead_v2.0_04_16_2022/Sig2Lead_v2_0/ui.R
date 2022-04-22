@@ -103,9 +103,7 @@ shinyUI(
                    # fluidRow(
 ############# Add this ##############################################     
                  br(),
-                  tags$h1("This tab permits the identification of structurally-similar candidate compounds to LINCS analogs concordant with a queried gene knockdown signature profiled by the",
-                  tags$a(href="https://lincsproject.org/", "LINCS Consortium"), 
-                  " by employing transcriptional signature connectivity and chemical similarity analysis"),
+                  tags$h1("This tab permmits ranking of potential inhibitors of a target gene by employing transcriptional signature connectivity and chemical similarity analysis"),
                   br(),
                   br(),
                      #fluidRow(
