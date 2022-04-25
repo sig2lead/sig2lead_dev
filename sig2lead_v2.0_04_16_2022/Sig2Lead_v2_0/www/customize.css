@@ -1,9 +1,13 @@
-h3{
+#span1{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+#hover1{
   color:#ffffff;
 }
 .tlp{
   color: #000000;
-  font-size: 3rem;
+  font-size: 1.5rem;
   position: relative;
 }
 .tlp .tooltip_text{

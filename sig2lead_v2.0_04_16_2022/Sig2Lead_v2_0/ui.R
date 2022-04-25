@@ -196,18 +196,22 @@ shinyUI(
                   #downloadButton("NCIDownload", label = "Download Similar NCI")
                   tags$div(
                     tags$div(class='tlp',
-                             tags$span("Learn more"),
+                             icon("question-circle", lib = "font-awesome"),
+                             tags$span("Learn More", id = "span1"),
                              tags$div(class="tooltip_text",
-                                      tags$h3("For a set of candidate molecules defined in a user 
-                            provided file and a target gene specified by the user, 
-                            candidate drugs are ranked by similarity to their 'concordant' 
-                            LINCS analogs that share transcriptional signature similarity 
-                            with a knock-down of the target gene. Note that not all 
-                            genes had their knock-down included in LINCS."),
+                                      tags$h3(id = "hover1", "For a set of candidate molecules defined in a user 
+                                                              provided file and a target gene specified by the user, 
+                                                              candidate drugs are ranked by similarity to their 'concordant' 
+                                                              LINCS analogs that share transcriptional signature similarity 
+                                                              with a knock-down of the target gene. Note that not all 
+                                                              genes had their knock-down included in",
+                                              tags$a(href="https://lincsproject.org/", "LINCS")
+                                      )
                                       
                              )
                     )
                   )
+
                   
                   
 
@@ -439,7 +443,23 @@ shinyUI(
                #downloadButton("RepDownload", label="Download Representatives"),
                #downloadButton("ClusterDownload", label = "Download Clusters"),
 
-          ),tags$h1("Top ranking candidate molecules defined in a user provided file as well as their 'concordant' LINCS analogs that share transcriptional signature similarity with a knock-down of the target gene are clustered using chemical similarity to identify structural classes of putative drug candidates. Note that this step may take some time if the number of top candidates to be included is increased."),),
+          ),tags$div(
+            tags$div(class='tlp',
+                     icon("question-circle", lib = "font-awesome"),
+                     tags$span("Learn More", id = "span1"),
+                     tags$div(class="tooltip_text",
+                              tags$h3(id = "hover1", "Top ranking candidate molecules defined 
+                                      in a user provided file as well as their 'concordant' 
+                                      LINCS analogs that share transcriptional signature similarity 
+                                      with a knock-down of the target gene are clustered using 
+                                      chemical similarity to identify structural classes of putative 
+                                      drug candidates. Note that this step may take some time 
+                                      if the number of top candidates to be included is increased." 
+                              )
+                              
+                     )
+            )
+          ),),
           
           br(),
           br(),
