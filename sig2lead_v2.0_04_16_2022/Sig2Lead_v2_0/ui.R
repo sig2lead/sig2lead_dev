@@ -103,7 +103,7 @@ shinyUI(
                    # fluidRow(
 ############# Add this ##############################################     
                  br(),
-                  tags$h1("This tab permmits ranking of potential inhibitors of a target gene by employing transcriptional signature connectivity and chemical similarity analysis"),
+                  tags$h1("This tab permits ranking of potential inhibitors of a target gene by employing transcriptional signature connectivity and chemical similarity analysis"),
                   br(),
                   br(),
                      #fluidRow(
