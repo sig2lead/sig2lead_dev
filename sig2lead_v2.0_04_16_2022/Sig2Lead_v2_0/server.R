@@ -652,7 +652,7 @@ shinyServer(function(input, output) {
                       
                       for(i in 1:nrow(test_bypass_fpsim)){
                       #i <- 1
-                       test_bypass_fpsim$sstar[i]  <- -(log10(1-(test_bypass_fpsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_fpsim$Concordance[i] + 0.0001)/lincs_max)))
+                       test_bypass_fpsim$sstar[i]  <- -(log10(1-(test_bypass_fpsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_fpsim$Concordance[i] - 0.0001)/lincs_max)))
                       }
                       colnames(test_bypass_fpsim)[7] <- "S*"
                       test_bypass_fpsim$'S*'<- as.numeric(test_bypass_fpsim$'S*')
@@ -762,7 +762,7 @@ shinyServer(function(input, output) {
                       
                       for(i in 1:nrow(test_bypass_minsim)){
                       #i <- 1
-                       test_bypass_minsim$sstar[i]  <- -(log10(1-(test_bypass_minsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_minsim$Concordance[i] + 0.0001)/lincs_max)))
+                       test_bypass_minsim$sstar[i]  <- -(log10(1-(test_bypass_minsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_minsim$Concordance[i] - 0.0001)/lincs_max)))
                       }
                       colnames(test_bypass_minsim)[7] <- "S*"
                       test_bypass_minsim$'S*'<- as.numeric(test_bypass_minsim$'S*')
@@ -1020,7 +1020,7 @@ shinyServer(function(input, output) {
                       
                       for(i in 1:nrow(test_bypass_fpsim)){
                       #i <- 1
-                       test_bypass_fpsim$sstar[i]  <- -(log10(1-(test_bypass_fpsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_fpsim$Concordance[i] + 0.0001)/lincs_max)))
+                       test_bypass_fpsim$sstar[i]  <- -(log10(1-(test_bypass_fpsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_fpsim$Concordance[i] - 0.0001)/lincs_max)))
                       }
                       colnames(test_bypass_fpsim)[7] <- "S*"
                       test_bypass_fpsim$'S*'<- as.numeric(test_bypass_fpsim$'S*')
@@ -1120,7 +1120,7 @@ shinyServer(function(input, output) {
                       test_bypass_minsim$Similarity <- round(test_bypass_minsim$Similarity, 3)
                       for(i in 1:nrow(test_bypass_minsim)){
                       #i <- 1
-                       test_bypass_minsim$sstar[i]  <- -(log10(1-(test_bypass_minsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_minsim$Concordance[i] + 0.0001)/lincs_max)))
+                       test_bypass_minsim$sstar[i]  <- -(log10(1-(test_bypass_minsim$Similarity[i] - 0.0001)) + log10(1-((test_bypass_minsim$Concordance[i] - 0.0001)/lincs_max)))
                       }
                       colnames(test_bypass_minsim)[7] <- "S*"
                       test_bypass_minsim$'S*'<- as.numeric(test_bypass_minsim$'S*')
